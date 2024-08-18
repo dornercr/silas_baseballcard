@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silas Dorner - Francisville A's</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .card {
+            width: 90%;
+            max-width: 400px;
+            background-color: #4caf50;
+            border: 10px solid #ffeb3b;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+            transition: transform 0.3s ease;
+        }
+        .card-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .player-name {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .player-info {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .player-details {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .card-number {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ffeb3b;
+            color: #4caf50;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .team-name {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ffeb3b;
+            color: #4caf50;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-image">
+            <img src="silasbaseball1.jpg" alt="Silas Dorner playing baseball">
+        </div>
+        <div class="card-number">#30</div>
+        <div class="team-name">Francisville A's</div>
+        <div class="card-content">
+            <div class="player-name">Silas Dorner</div>
+            <div class="player-info">Shortstop/Pitcher | 6'4" | 225 lbs</div>
+            <div class="player-details">Hometown: Philadelphia, PA</div>
+            <div class="player-details">Favorite Baseball Player: Bryson Stott</div>
+            <div class="player-details">Favorite Video Game: Fortnite</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const card = document.querySelector('.card');
+            card.addEventListener('mouseover', function() {
+                card.style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseout', function() {
+                card.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
